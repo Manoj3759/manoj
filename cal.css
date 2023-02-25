@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div{
+    max-width: 28%;
+    max-height: auto;
+    background-color: hsla(16, 100%, 50%, 0.632);
+    position: relative;
+    border: 2px solid whitesmoke;
+    border-radius: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    padding: 0.3rem;
+}
+span{
+    position: absolute;
+    color:hsl(16, 100%, 50%);
+    background-color: whitesmoke;
+    font-size: large;
+    font-weight: bold;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    height: 2.9rem;
+    width: 90.5%;
+}
+button{
+    color:hsl(16, 100%, 50%);
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 2px solid whitesmoke;
+    border-radius: 25%;
+}
