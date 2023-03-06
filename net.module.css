@@ -1,0 +1,46 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+nav{
+    width: auto;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+
+}
+#nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-items: space-evenly;
+    gap: 1.2rem;
+    color: aliceblue;
+}
+ ul img{
+    width: 6.5rem;
+    height: 3.2rem;
+    position: absolute;
+    left: 8.5rem;
+    margin: 18px;
+}
+
+.btn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    left: 90vw;
+}
+.btn i{
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
