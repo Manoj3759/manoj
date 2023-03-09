@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.first{
+    border: 2px solid rgba(196, 190, 211, 0.9);
+    text-transform: capitalize;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    background-color: rgb(49, 54, 52);
+    color: whitesmoke;
+    padding: 0.2rem;
+}
+.main{
+    display: flex;
+    gap: 1rem;
+}
