@@ -17,6 +17,7 @@ const Create = () => {
        } catch  {
         console.log("Error");
        }
+       window.location.assign('/')
     }
   return (
     <>
@@ -24,7 +25,7 @@ const Create = () => {
     <label htmlFor="course">CourseName: </label>
     <input type="text" id='course' onChange={(e)=>{
         setCourse(e.target.value)
-    }} /> <br />
+    }} /> <br /><br />
     <label htmlFor="author">AuthorName: </label>
     <input type="text" id='author' onChange={(e)=>{
         setAuthor(e.target.value)
