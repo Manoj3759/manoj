@@ -1,0 +1,48 @@
+div{
+    display: block;
+    flex-wrap: wrap;
+}
+.card {
+    width: 17vw;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 16px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .card h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .card a {
+    color: #0077cc;
+    text-decoration: none;
+    margin-right: 8px;
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+  
+  .card button {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background-color: #005fa3;
+  }
+  

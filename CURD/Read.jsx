@@ -1,5 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import axiosInstance from './../helper/axiosInstance';
+import { Link } from 'react-router-dom';
+import "../CURD/Style/read.css"
 
 const Read = () => {
     let[data,setData]=useState([])
@@ -11,6 +13,11 @@ const Read = () => {
         }
         fetchData()
     },[])
+    let deleteData = async(id)=>{
+        await axiosInstance.delete(`/posts/${id}`)
+        window.location.assign('/view')
+
+    }
   return (
     <div style={{
         display:'flex',
@@ -19,16 +26,13 @@ const Read = () => {
     }}>
         {
             data.map((x)=>{ return(
-                <div style={{
-                    width:'40%',
-                    border:'2px solid black',
-                    borderRadius:'25px',
-                    textAlign:'center',
-                    
-                
-                }}>
+                <div className='card'>
                     <h1>{x.course}</h1>
                     <h2>{x.author}</h2>
+                    <Link to={`/update/${x.id}`}>UPDATE</Link>
+                <button onClick={()=>{
+                    deleteData(x.id)
+                }}>DELETE</button>
                 </div>
             ) })
 
