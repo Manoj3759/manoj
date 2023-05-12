@@ -1,0 +1,10 @@
+<div class="container">
+        <form  action="/task-manager/task/{{task._id}}?_method=PUT" id="form" method="post" >
+        <h1>Task manager</h1>
+        {{!-- it id used to append into queryString or syntax to use put method using method override --}}
+        <input type="hidden" name="_method" value="PUT">
+        <label for="task">Task</label>
+        <input type="text" id="task" name="task" value="{{task.task}}">
+        <button type="submit">Update</button>
+    </form>
+</div>

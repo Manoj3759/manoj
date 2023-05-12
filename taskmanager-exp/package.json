@@ -1,0 +1,28 @@
+{
+  "name": "taskmanager-exp",
+  "version": "1.0.0",
+  "description": "crud-task",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "devStart": "nodemon app.js"
+  },
+  "keywords": [
+    "task",
+    "edit",
+    "update",
+    "delete",
+    "create"
+  ],
+  "author": "manoj",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "method-override": "^3.0.0",
+    "mongoose": "^7.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
