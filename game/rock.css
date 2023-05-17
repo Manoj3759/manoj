@@ -1,0 +1,97 @@
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+body div {
+    width: 50vw;
+    height: 40vh;
+    background-color: #f2f2f2;
+    border: 2px solid #ff6600;
+    border-radius: 25px;
+    text-align: center;
+  }
+
+  /* Style the buttons */
+  button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+
+  button:hover {
+    background-color: #3e8e41;
+  }
+
+  /* Style the h2 headings */
+  h2 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+
+  span {
+    font-weight: bold;
+    color: #ff6600;
+  }
+
+
+  #result {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+    transition: all 0.5s ease;
+  }
+
+  #result.win {
+    color: green;
+  }
+
+  #result.lose {
+    color: red;
+  }
+
+  #result.draw {
+    color: #ffcc00;
+  }
+
+  #result:before {
+    content: "\1F389";
+  }
+
+  #result.win:before {
+    content: "\1F44D";
+  }
+
+  #result.lose:before {
+    content: "\1F44E";
+  }
+
+  #result.draw:before {
+    content: "\1F937";
+  }
+
+  #result:before {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
